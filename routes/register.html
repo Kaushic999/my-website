@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="./css/stylesheet.css"> 
+    
+    <style>
+        /* Styles from your original stylesheet.css (modified) */
+        body {
+            text-align: center;
+            background-color: #C1FFC1; /* Modified color to match new design */
+            font-family: sans-serif; /* Added font */
+        }
+
+        #headersection {
+            padding: 5px;
+        }
+
+        #headersection h1 {
+            font-family: Arial, sans-serif; /* Modified font to match new design */
+            font-size: 2.5em; 
+            color: #333;
+        }
+
+        /* The general 'input' style is being replaced/overridden */
+        input[type="text"],
+        input[type="number"],
+        input[type="password"],
+        #address {
+            padding: 10px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 45%; /* To get two inputs side-by-side */
+            box-sizing: border-box; 
+        }
+
+        #address {
+            width: 93%; /* Single input spans wider */
+        }
+        
+        /* Styles for the new design structure */
+        #bodysection h2 {
+            font-family: Arial, sans-serif;
+            font-size: 1.8em; 
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            background-color: #E0FFE0; 
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+            max-width: 500px; 
+            width: 90%;
+        }
+
+        #imagepart {
+            border: 2px solid #aaa; 
+            border-radius: 5px;
+            padding: 10px;
+            width: 93%; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            margin: 10px auto; 
+            background-color: #fff; 
+        }
+
+        #imagepart input[type="file"] {
+            flex-grow: 1; 
+            margin-left: 10px; 
+        }
+        
+        #Role {
+            border: 2px solid #aaa; 
+            border-radius: 5px;
+            padding: 10px;
+            width: 93%; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            margin: 10px auto; 
+            background-color: #fff; 
+        }
+
+        #Role select {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-left: 10px;
+            background-color: #f9f9f9;
+        }
+
+        #logbtn {
+            padding: 10px 25px; /* Larger padding for button */
+            font-size: 1.1em; /* Adjusted size */
+            background-color: #007bff; /* Modified color to match new design */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        #logbtn:hover {
+            background-color: #0056b3; 
+        }
+
+        a {
+            color: #007bff; 
+            text-decoration: none;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 20px auto;
+            width: 80%;
+        }
+
+    </style>
+    </head>
+<body>
+    <div id="headersection">
+        <h1>Online Voting System</h1>
+    </div>
+
+    <hr>
+
+    <div id="bodysection">
+        <h2>Registration</h2>
+        <form action="#" method="POST">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="number" name="mobile" placeholder="Mobile" required><br><br>
+            <input type="password" name="password" placeholder="Password" required>
+            <input type="password" name="cpassword" placeholder="Confirm Password" required><br><br>
+            <input type="text" name="address" id="address" placeholder="Address" required><br><br>
+
+            <div id="imagepart">
+                Upload image: <input type="file" name="photo">
+            </div>
+            <br>
+            <div id="Role">
+                Select your role:
+                <select name="role">
+                    <option value="1">Voter</option>
+                    <option value="2">Group</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" id="logbtn">Register</button><br><br>
+            Already user? <a href="../index.html">Login here</a>
+        </form>
+    </div>
+
+</body>
+</html>

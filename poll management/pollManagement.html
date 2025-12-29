@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Public Poll</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #b6f2a5;
+        }
+        .container {
+            width: 700px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 25px;
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #2c7a2c;
+            margin-bottom: 25px;
+        }
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 25px;
+        }
+        .position-box {
+            border: 1px solid #c3e6cb;
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 25px;
+        }
+        .position-title {
+            font-weight: bold;
+            color: #155724;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+        .candidate-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .vote-btn {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 6px 14px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .vote-count {
+            background: #28a745;
+            color: white;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+        .note {
+            text-align: center;
+            color: #888;
+            font-style: italic;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Public Voting Poll</h1>
+
+    <!-- Brand dropdown (options will come from database) -->
+    <select></select>
+
+    <!-- ================= POSITION BLOCK TEMPLATE ================= -->
+    <!-- This whole block will repeat for EACH POSITION from database -->
+
+    <div class="position-box">
+
+        <!-- Position name will be injected here -->
+        <div class="position-title"></div>
+
+        <!-- ================= CANDIDATE ROW TEMPLATE ================= -->
+        <!-- This row will repeat for EACH CANDIDATE under this position -->
+
+        <div class="candidate-row">
+            <!-- Candidate name -->
+            <span></span>
+
+            <!-- Vote button + vote count -->
+            <div>
+                <button class="vote-btn">Vote</button>
+                <span class="vote-count"></span>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+
+    </div>
+
+    <!-- ============================================================ -->
+
+    <div class="note">
+        All brands, positions, candidates, vote buttons and counts
+        will load dynamically after database connection
+    </div>
+</div>
+
+</body>
+</html>

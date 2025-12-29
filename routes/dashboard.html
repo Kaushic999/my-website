@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online Voting System - Dashboard</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+            font-family: Arial, sans-serif;
+            background: #e2f0d5;
+        }
+
+        .container{
+            width: 90%;
+            margin: 20px auto;
+            background: #b6e3a8;
+            padding: 20px;
+            border-radius: 25px;
+        }
+
+        h1{
+            text-align: center;
+            margin-top: 0;
+            font-size: 32px;
+        }
+
+        .top-btn{
+            float:right;
+            margin-left: 10px;
+            background:#2b8bff;
+            color:white;
+            padding:8px 15px;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
+        }
+
+        .top-btn:hover{
+            background:#1c6cd9;
+        }
+
+        .content-box{
+            display: flex;
+            margin-top: 20px;
+        }
+
+        /* Left Profile Box */
+        .profile-box{
+            width: 35%;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+            margin-right:20px;
+        }
+
+        .profile-box img{
+            width:120px;
+            display:block;
+            margin:auto;
+        }
+
+        .profile-box p{
+            font-size: 16px;
+            margin:6px 0;
+        }
+
+        .status{
+            color:green;
+            font-weight:bold;
+        }
+
+        /* Right Group Box */
+        .group-box{
+            width: 65%;
+            background:white;
+            padding:20px;
+            border-radius:10px;
+        }
+
+        .group-item{
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            border-bottom:1px solid #ddd;
+            padding:15px 0;
+        }
+
+        .group-item:last-child{
+            border-bottom:none;
+        }
+
+        .group-img{
+            width:80px;
+        }
+
+        .vote-btn{
+            background:#38b95d;
+            color:white;
+            padding:6px 15px;
+            border:none;
+            border-radius:6px;
+        }
+
+        .section-title{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <button class="top-btn">Logout</button>
+    <button class="top-btn">Back</button>
+
+    <h1>Online Voting System</h1>
+
+    <div class="content-box">
+
+        <!-- Profile Section -->
+        <div class="profile-box" id="Profile">
+            <div class="section-title">Voter Details</div>
+            <img src="user.png" alt="User">
+            <p><b>Name :</b> <!-- Add from DB --> </p>
+            <p><b>Mobile :</b> <!-- Add from DB --> </p>
+            <p><b>Address :</b> <!-- Add from DB --> </p>
+            <p><b>Status :</b> <span class="status"><!-- Add from DB --></span></p>
+        </div>
+
+        <!-- Group Section -->
+        <div class="group-box" id="Group">
+            <div class="section-title">Voting Board</div>
+
+            <div class="group-item">
+                <div>
+                    <p><b>Group Name :</b> <!-- DB --> </p>
+                    <p><b>Votes :</b> <!-- DB --> </p>
+                    <button class="vote-btn">Voted</button>
+                </div>
+                <img src="bike.png" class="group-img">
+            </div>
+
+            <div class="group-item">
+                <div>
+                    <p><b>Group Name :</b> <!-- DB --> </p>
+                    <p><b>Votes :</b> <!-- DB --> </p>
+                    <button class="vote-btn">Voted</button>
+                </div>
+                <img src="wheel.png" class="group-img">
+            </div>
+
+            <div class="group-item">
+                <div>
+                    <p><b>Group Name :</b> <!-- DB --> </p>
+                    <p><b>Votes :</b> <!-- DB --> </p>
+                    <button class="vote-btn">Voted</button>
+                </div>
+                <img src="auto.png" class="group-img">
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
