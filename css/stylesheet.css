@@ -1,0 +1,38 @@
+body {
+    text-align: center;
+    background-color: #EDE9F4;
+}
+
+.imagecs {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 30%;
+}
+
+#headersection {
+    padding: 5px;
+}
+
+#headersection h1 {
+    font-family: Cursive;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+    width: 33%;
+}
+
+#dropbx {
+    padding: 10px;
+    border-radius: 5px;
+    width: 15%;
+}
+
+#logbtn {
+    padding: 5px;
+    font-size: 15px;
+    background-color: #349B0B;
+    color: white;
+    border-radius: 5px;
+}
